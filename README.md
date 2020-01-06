@@ -1,6 +1,6 @@
 # flySimulator1.0
 link to git hub: 
-git@github.com:Lielshuker/flySimulator1.0.git
+git@github.com:Lielshuker/flysimulatorfinal.git
 ## Installation
 to start the simulator ypu need to install flightgear simulator from the link: https://www.flightgear.org/
 or do the following command at the terminal:
@@ -14,8 +14,7 @@ then, download the file generic_small to the protocol folder under data of the s
 in addintion, add to the project file that give the simultor Instructions how to fly the airplane.
 ## Usage
 compile the main.cpp with argument that contains the name file that the simulator will read the information from.
-gcc main.cpp <argumen>
-for example gcc main.cpp fly.txt
+g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
 ## Documentation 
 this project get fly Instructions txt file, the file being read by lexar function and than parser funcation that open commands.
 each command have the responsibility to do something with the simulator:
